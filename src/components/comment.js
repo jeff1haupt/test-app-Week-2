@@ -9,10 +9,10 @@ export default class Comment extends React.Component {
         return (
             <div className='card w-75'>
                 <div className='card-header bg-success text-white'>
-                    Username and Time 
+                    {this.props.username} {this.props.date}
                 </div>
                 <div className='card-body'>
-                    Comment content
+                    {this.props.content}
                 </div>
                 <div className='card-footer'>
                     <LikeButton />
