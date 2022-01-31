@@ -1,8 +1,9 @@
 import React from 'react';
 
-export default class ReplyButton extends React.Component {
-    render() {
-        return <button className="btn btn-primary">Reply</button>;
-    }
+// Created using functional components vs Class components
 
+const ReplyButton = () => {
+    return <button className="btn btn-primary">Reply</button>;
 }
+
+export default ReplyButton;
