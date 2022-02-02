@@ -2,6 +2,7 @@ import React from "react";
 import ReplyButton from "./reply-button";
 import LikeButton from "./like-button";
 import Comment from "./comment";
+import Cringe from "./cringe";
 
 function Post(props) {
     let comments; 
@@ -11,7 +12,7 @@ function Post(props) {
     return(
         <div className="card w-75">
             <div className="card-header bg-success text-white">
-                Username and Time 
+                {props.username}
             </div>
             <div className="card-body">
                 {props.content}
@@ -19,6 +20,7 @@ function Post(props) {
             <div className="card-footer">
                 <LikeButton />
                 <ReplyButton />
+                <Cringe />
                 {comments}
             </div>
         </div>
@@ -47,6 +49,7 @@ export default Post
 //         let comments;
 //         if (this.state.comments) {
 //             comments = this.state.comments.map((comment, index) => <Comment key={index} {...comment} />);
+//             console.log(comments);
 //         }
 //         return(
 //             <div className="card w-75">

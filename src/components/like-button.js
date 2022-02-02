@@ -1,8 +1,10 @@
-import React from 'react';
+import React from 'react'; //necessary
 
-export default class LikeButton extends React.Component {
+class LikeButton extends React.Component {
     render() {
-        return <button className="btn btn-primary">Like</button>;
+        return <button className="btn btn-primary mx-2">Like</button>;
     }
 
 }
+
+export default LikeButton;

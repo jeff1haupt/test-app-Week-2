@@ -1,6 +1,8 @@
 import React from 'react';
 import ReplyButton from './reply-button';
 import LikeButton from './like-button';
+import Cringe from './cringe';
+import Happy from './happy';
 
 let e = React.createElement;
 
@@ -18,6 +20,8 @@ export default class Comment extends React.Component {
                     <LikeButton />
                     <span>&nbsp;</span>
                     <ReplyButton />
+                    <Cringe />
+                    <Happy />
                 </div>
             </div>
         );
